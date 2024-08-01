@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<link rel="stylesheet" href="/01_UX/CSS/style.css">
+</head>
+<body style="  font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+<div class="container_sign_up">
+    <h2>Sign Up</h2>
+    <form id="signupForm" onsubmit="return signUp()">
+        <input type="text" id="username" placeholder="Username" aria-label="Username">
+        <div id="usernameError" class="error_sign_up"></div>
+
+        <input type="email" id="email" placeholder="Email" aria-label="Email">
+        <div id="emailError" class="error_sign_up"></div>
+
+        <input type="tel" id="mobile" placeholder="Mobile Number (10 digits)" pattern="[0-9]{10}" aria-label="Mobile Number">
+        <div id="mobileError" class="error_sign_up"></div>
+
+        <input type="password" id="password" placeholder="Create Password" aria-label="Create Password">
+        <div id="passwordError" class="error_sign_up"></div>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" aria-label="Confirm Password">
+        <div id="confirmPasswordError" class="error_sign_up"></div>
+
+        <input type="submit" value="Sign Up">
+
+        <div class="action-links_sign_up">
+            <a href="index.html">Already registered? Sign In</a> | <a href="#" onClick="openGooglePopup()">Login with Google</a>
+        </div>
+    </form>
+</div>
+
+<script src="/01_UX/JS/sign_up.js"></script>
+
+</body>
+</html>

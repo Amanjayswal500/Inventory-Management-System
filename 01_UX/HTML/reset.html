@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reset</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body id="main-body"> 
+   
+      
+
+  <div class="container">
+    <h1>Reset Password</h1>
+    <p>Please create a new password that you don't use on any other.</p>
+    
+
+    <form id="form" action="/">
+        <div class="input-control">
+            <label for="new-password">New Password</label>
+            <input id="new-password" name="New Password" type="password">
+            <div id="new-password-error"></div>
+        </div>
+        <div class="input-control">
+            <label for="confirm-password">Confirm Password</label>
+            <input id="confirm-password"name="Confirm Password" type="password">
+            <div id="confirm-password-error"></div>
+        </div>
+      
+        <input class="submit-button" type="button" value="Submit"  onClick="checkPassword()" />
+      
+      </div>
+    </form>
+    
+    
+  </div>
+  
+  <script src="../JS/reset.js"></script>
+ 
+</body>
+</html>
