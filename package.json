@@ -8,5 +8,8 @@
     "react-hook-form": "^7.51.4",
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
