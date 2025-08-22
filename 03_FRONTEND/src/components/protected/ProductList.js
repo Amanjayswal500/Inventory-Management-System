@@ -13,10 +13,8 @@ const ProductList = ({ products, error, loading }) => {
 
   useEffect(() => {
     const itemsPerPage = 10; // Number of items to display per page
-    let indexOfLastItem = 0;
-
     setCurrentPage(1);
-    indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfLastItem = 1 * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 
     setCurrentItems(products.slice(indexOfFirstItem, indexOfLastItem));
@@ -24,7 +22,7 @@ const ProductList = ({ products, error, loading }) => {
     for (let i = 1; i <= Math.ceil(products.length / itemsPerPage); i++) {
       arr.push(i);
     }
-    setPageNumbers([...arr])
+    setPageNumbers([...arr]);
   }, [products]);
 
   useEffect(() => {
@@ -41,8 +39,8 @@ const ProductList = ({ products, error, loading }) => {
     for (let i = 1; i <= Math.ceil(products.length / itemsPerPage); i++) {
       arr.push(i);
     }
-    setPageNumbers([...arr])
-  }, [currentPage]);
+    setPageNumbers([...arr]);
+  }, [currentPage, products]);
 
 
   const capitalizeFirstLetter = (text = "abc") => {

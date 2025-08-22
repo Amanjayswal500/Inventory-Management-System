@@ -13,9 +13,7 @@ const Search = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [originalSearchResult, setOriginalSearchResult] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
-  const [recentSearches, setRecentSearches] = useState([]);
   const [searchSuggest, setSearchSuggest] = useState([]);
-  const [saveCategoryId, setSaveCategoryId] = useState(false);
   const [prevFilterOption, setPrevFilterOption] = useState({
     "price": "",
     "category": "",
@@ -89,10 +87,6 @@ const Search = () => {
         setSearchResults(response.data);
 
         // Update recent searches
-        setRecentSearches((prevRecentSearches) => {
-          const updatedRecentSearches = [query, ...prevRecentSearches.filter(q => q !== query)];
-          return updatedRecentSearches.slice(0, 5); // Keep only the last 5 searches
-        });
       } catch (error) {
         let response = error.response;
         setShowResults(false);
@@ -122,7 +116,6 @@ const Search = () => {
   // Function to filter products based on selected category and other criteria
   const getCategory = (filterCriteria) => {
     let filteredProducts;
-    setSaveCategoryId(true);
     setPrevFilterOption(filterCriteria)
     // filter for  serach
     if (showResults) {

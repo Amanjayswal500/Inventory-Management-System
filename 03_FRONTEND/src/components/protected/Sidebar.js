@@ -50,6 +50,7 @@ const Sidebar = () => {
         <button className="close" onClick={toggleSidebar}>
           <span className="material-icons-sharp">close</span>
         </button>
+        
         <Link to="/Dashboard" className={activeLink === "/Dashboard" ? "active" : ""}>
           <span className="material-icons-sharp">grid_view</span>
           <h3>Dashboard</h3>
@@ -82,6 +83,14 @@ const Sidebar = () => {
             <h3>Reports</h3>
           </Link>
         )}
+        {admin ?("") :(
+          
+          <Link to="/analytics" className={activeLink === "/analytics" ? "active" : ""}>
+            <span className="material-icons-sharp">analytics</span>
+            <h3>Analytics</h3>
+          </Link>
+        )}
+        
         <Link to="/" onClick={handleLogout}>
           <span className="material-icons-sharp">logout</span>
           <h3>Logout</h3>

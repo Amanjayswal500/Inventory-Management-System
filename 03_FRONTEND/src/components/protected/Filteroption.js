@@ -43,7 +43,7 @@ const FilterComponent = ({ getCategory }) => {
 
   useEffect(() => {
     getCategory(selectedFilterOption);
-  }, [selectedFilterOption]);
+  }, [selectedFilterOption, getCategory]);
 
   return (
     <div>

@@ -54,8 +54,6 @@ const SignUp = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [isLoading, setIsLoading] = useState(false)
-
   /** This is a helper function to clear all the errors on the UI screen
    */
   const clearErrors = () => {
@@ -146,9 +144,6 @@ const SignUp = () => {
 
     setLoading(true);
 
-    setLoading(true);
-    setIsLoading(true)
-
     // validation was successful, attempting to make a call to the backend
 
     await axios
@@ -167,7 +162,6 @@ const SignUp = () => {
         alert(
           `Email verification link sent successfully, Please check you mail at ${email}`
         );
-        setIsLoading(false)
         redirectToEmailClient(email);
       })
       .catch((error) => {
@@ -199,7 +193,6 @@ const SignUp = () => {
           console.log("Backend not working");
           setErrorMessage("Internal Server Error");
         }
-        setIsLoading(false)
       });
   };
 
@@ -219,14 +212,6 @@ const SignUp = () => {
 
    window.open(emailClientUrl, '_blank');
   };
-
-  function openGooglePopup() {
-    window.open(
-      "https://www.google.com",
-      "googleLoginWindow",
-      "width=600,height=600"
-    );
-  }
 
   return (
     <div className="container_sign_up">
