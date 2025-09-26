@@ -12,6 +12,7 @@ import AdminDashboard from './components/protected/AdminDashboard';
 import ForgotPassword from './components/unprotected/ForgotPassword';
 import EmailNotification from './components/unprotected/EmailNotification';
 import AnalyticsDashboard from './components/protected/AnalyticsDashboard';
+import CompleteAnalytics from './components/protected/CompleteAnalytics';
 import Faq from './components/protected/Faq';
 import NotFound from './components/unprotected/NotFound';
 import RegConfig from './components/unprotected/RegConfig';
@@ -68,6 +69,7 @@ const App = () => {
         <Route path="/admin_dashboard" element={<AdminDashboard />} />
         <Route path="/admin_product" element={<ManageProduct />} />
          <Route path="/analytics" element={<AnalyticsDashboard />} /> 
+         <Route path="/CompleteAnalytics" element={<CompleteAnalytics />} /> 
       </Route>
 
       {/* Wildcard Route */}
