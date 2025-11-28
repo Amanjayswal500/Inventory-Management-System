@@ -94,7 +94,7 @@ const Sidebar = () => {
           
           <Link to="/CompleteAnalytics" className={activeLink === "/CompleteAnalytics" ? "active" : ""}>
             <span className="material-icons-sharp">analytics</span>
-            <h3>CompleteAnalytics</h3>
+            <h3>Admin Analytics</h3>
           </Link>
         )}
         

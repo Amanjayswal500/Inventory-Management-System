@@ -130,7 +130,7 @@ const CompleteAnalytics = () => {
           <CardContent className="stats-content">
             <div className="stats-text">
               <p className="stats-label">Revenue</p>
-              <h2 className="stats-value">$1,234,567</h2>
+              <h2 className="stats-value">1,234,567 INR</h2>
               <p className="stats-change stats-green">↑ 12.5 vs last period</p>
             </div>
             <div className="stats-icon-wrapper stats-icon-green">

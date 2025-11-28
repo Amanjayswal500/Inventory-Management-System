@@ -27,7 +27,7 @@ const Footer = () => {
         
         {/*Copyright Information*/}
         <div className="row">
-          INFO SYS Copyright © 2024 INFO SYS - All rights reserved || Designed By: InventoryMangement Team
+          INFO SYS Copyright © 2025 INFO SYS - All rights reserved || Designed By: InventoryMangement Team
         </div>
       </div>
     </footer>

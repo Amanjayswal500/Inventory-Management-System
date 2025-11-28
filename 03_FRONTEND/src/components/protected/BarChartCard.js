@@ -2,10 +2,10 @@ import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recha
 
 const data = [
   { name: 'Electronics', value: 31, color: '#8c8cd9' },
-  { name: 'Clothing', value: 22, color: '#6a0572' },
-  { name: 'Home & Garden', value: 19, color: '#f73859' },
-  { name: 'Books', value: 15, color: '#1de9b6' },
-  { name: 'Sports & Outdoors', value: 13, color: '#ffc107' },
+  { name: 'Laptop', value: 22, color: '#6a0572' },
+  { name: 'Home Appliance', value: 19, color: '#f73859' },
+  { name: 'Mobiles', value: 15, color: '#1de9b6' },
+  { name: 'Music Appliance', value: 13, color: '#ffc107' },
 ];
 
 const CustomLegend = () => {
